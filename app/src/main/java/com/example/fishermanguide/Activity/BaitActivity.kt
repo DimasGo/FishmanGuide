@@ -5,7 +5,7 @@ import android.os.Bundle
 import com.example.fishermanguide.Navigation.BaseActivity
 import com.example.fishermanguide.R
 
-class BaitActivity : BaseActivity() {
+class BaitActivity : BaseActivity(2) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
