@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_item_fish"
+        android:icon="@drawable/ic_fish"
+        android:title="@string/fish"/>
+    <item
+        android:id="@+id/nav_item_tackle"
+        android:icon="@drawable/ic_tackle"
+        android:title="@string/tackle"/>
+    <item
+        android:id="@+id/nav_item_bait"
+        android:icon="@drawable/ic_bait"
+        android:title="@string/bait"/>
+    <item
+        android:id="@+id/nav_item_history"
+        android:icon="@drawable/ic_history"
+        android:title="@string/history"/>
+</menu>
