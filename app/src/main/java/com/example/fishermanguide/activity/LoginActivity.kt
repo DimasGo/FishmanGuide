@@ -1,4 +1,4 @@
-package com.example.fishermanguide.Activity
+package com.example.fishermanguide.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
