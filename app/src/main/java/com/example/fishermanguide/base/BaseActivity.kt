@@ -1,4 +1,4 @@
-package com.example.fishermanguide.Navigation
+package com.example.fishermanguide.base
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -9,7 +9,7 @@ import com.example.fishermanguide.Activity.MainActivity
 import com.example.fishermanguide.Activity.TackleActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-open class BaseActivity(val navNumber: Int) : AppCompatActivity() {
+open class BaseActivity(val nav_number: Int) : AppCompatActivity() {
     fun SetupBottomNavigation(){
 
        // bottom_navigation_view.setIconSize(29f, 29f)
@@ -44,7 +44,7 @@ open class BaseActivity(val navNumber: Int) : AppCompatActivity() {
             }
             // bottom_navigation_view.
         }
-        bottom_navigation_view.menu.getItem(navNumber).isChecked = true
+        bottom_navigation_view.menu.getItem(nav_number).isChecked = true
 
     }
 }

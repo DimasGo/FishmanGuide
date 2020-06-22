@@ -1,8 +1,7 @@
 package com.example.fishermanguide.Activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.fishermanguide.Navigation.BaseActivity
+import com.example.fishermanguide.base.BaseActivity
 import com.example.fishermanguide.R
 
 class TackleActivity : BaseActivity(1) {

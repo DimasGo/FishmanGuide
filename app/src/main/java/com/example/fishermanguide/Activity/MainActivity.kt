@@ -1,7 +1,7 @@
 package com.example.fishermanguide.Activity
 
 import android.os.Bundle
-import com.example.fishermanguide.Navigation.BaseActivity
+import com.example.fishermanguide.base.BaseActivity
 import com.example.fishermanguide.R
 
 class MainActivity : BaseActivity(0) {

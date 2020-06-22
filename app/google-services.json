@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "423879285804",
+    "firebase_url": "https://fishmanguide.firebaseio.com",
+    "project_id": "fishmanguide",
+    "storage_bucket": "fishmanguide.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423879285804:android:8b62cce4f91104e6088589",
+        "android_client_info": {
+          "package_name": "com.example.fishermanguide.base"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "423879285804-p7kdc92jtpa73bcm1ursn0cpq3hs5eld.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fishermanguide.base",
+            "certificate_hash": "44e8d315d540f10738321ffe8e8d6dc787e7420a"
+          }
+        },
+        {
+          "client_id": "423879285804-1nhops4oqi7r9rm0a72or3hhgld1t1d4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbmefjvhQ9YT7cg5WjkzY2tAEi4yiN9v8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "423879285804-1nhops4oqi7r9rm0a72or3hhgld1t1d4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
