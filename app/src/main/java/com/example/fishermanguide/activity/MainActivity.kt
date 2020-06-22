@@ -15,6 +15,7 @@ class MainActivity : BaseActivity(0) {
         setContentView(R.layout.activity_main)
         SetupBottomNavigation()
 
+        //FireBase
         val auth = FirebaseAuth.getInstance()
         auth.signInWithEmailAndPassword("dima_goncharuk@gmail.com", "dima020992")
             .addOnCompleteListener{

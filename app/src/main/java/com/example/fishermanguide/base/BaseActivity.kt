@@ -10,8 +10,9 @@ import com.example.fishermanguide.activity.TackleActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 open class BaseActivity(val nav_number: Int) : AppCompatActivity() {
-    fun SetupBottomNavigation(){
 
+    //Function to work with Bottom Navigation View
+    fun SetupBottomNavigation(){
         bottom_navigation_view.setOnNavigationItemSelectedListener {
             val NextActivity =
                 when(it.itemId) {
