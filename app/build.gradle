@@ -6,6 +6,7 @@ android {
     compileSdkVersion 29
 
     defaultConfig {
+        applicationId "com.tf" //replace with the package_name in google-services.json =
         applicationId "com.example.fishermanguide"
         minSdkVersion 23
         targetSdkVersion 29

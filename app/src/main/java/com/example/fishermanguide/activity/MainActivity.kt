@@ -16,6 +16,7 @@ class MainActivity : BaseActivity(0) {
         SetupBottomNavigation()
 
         //FireBase
+        /*
         val auth = FirebaseAuth.getInstance()
         auth.signInWithEmailAndPassword("dima_goncharuk@gmail.com", "dima020992")
             .addOnCompleteListener{
@@ -25,5 +26,6 @@ class MainActivity : BaseActivity(0) {
                     Toast.makeText(applicationContext, "Error Sign In", Toast.LENGTH_SHORT).show()
                 }
             }
+        */
     }
 }

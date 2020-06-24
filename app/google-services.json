@@ -1,4 +1,11 @@
 {
+  "client_info": {
+    "mobilesdk_app_id": "1:113908578702:android:a0a98decfd9f22466f4cdf",
+    "android_client_info": {
+      "package_name": "com.example.fishermanguide"
+    }
+  },
+
   "project_info": {
     "project_number": "423879285804",
     "firebase_url": "https://fishmanguide.firebaseio.com",
