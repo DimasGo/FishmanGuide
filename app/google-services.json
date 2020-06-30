@@ -1,49 +1,42 @@
 {
-  "client_info": {
-    "mobilesdk_app_id": "1:113908578702:android:a0a98decfd9f22466f4cdf",
-    "android_client_info": {
-      "package_name": "com.example.fishermanguide"
-    }
-  },
-
   "project_info": {
-    "project_number": "423879285804",
-    "firebase_url": "https://fishmanguide.firebaseio.com",
-    "project_id": "fishmanguide",
-    "storage_bucket": "fishmanguide.appspot.com"
+    "project_number": "222057282773",
+    "firebase_url": "https://fishermanguide-8800f.firebaseio.com",
+    "project_id": "fishermanguide-8800f",
+    "storage_bucket": "fishermanguide-8800f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:423879285804:android:8b62cce4f91104e6088589",
+        "mobilesdk_app_id": "1:222057282773:android:e2bffaf5309b77f4cbb65c",
         "android_client_info": {
-          "package_name": "com.example.fishermanguide.base"
+          "package_name": "com.example.fishermanguide"
         }
       },
       "oauth_client": [
         {
-          "client_id": "423879285804-p7kdc92jtpa73bcm1ursn0cpq3hs5eld.apps.googleusercontent.com",
+          "client_id": "222057282773-b486fvu068q4al33ms595ejif37hrepq.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.fishermanguide.base",
+            "package_name": "com.example.fishermanguide",
             "certificate_hash": "44e8d315d540f10738321ffe8e8d6dc787e7420a"
           }
         },
         {
-          "client_id": "423879285804-1nhops4oqi7r9rm0a72or3hhgld1t1d4.apps.googleusercontent.com",
+          "client_id": "222057282773-ghnvpjl6usa9kvagr7eg6r6kqai8qd4q.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCbmefjvhQ9YT7cg5WjkzY2tAEi4yiN9v8"
+          "current_key": "AIzaSyAdN8HLg1QGO_aFfLB3XpXKuNVS9prYrK8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "423879285804-1nhops4oqi7r9rm0a72or3hhgld1t1d4.apps.googleusercontent.com",
+              "client_id": "222057282773-ghnvpjl6usa9kvagr7eg6r6kqai8qd4q.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

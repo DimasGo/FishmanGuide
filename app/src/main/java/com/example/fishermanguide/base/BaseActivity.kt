@@ -39,4 +39,8 @@ open class BaseActivity(val nav_number: Int) : AppCompatActivity() {
         bottom_navigation_view.menu.getItem(nav_number).isChecked = true
 
     }
+
+    fun OpenLoginActivity(){
+
+    }
 }

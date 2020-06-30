@@ -1,12 +1,62 @@
 package com.example.fishermanguide.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
+import android.view.View
+import android.widget.Toast
+import androidx.core.widget.addTextChangedListener
 import com.example.fishermanguide.R
+import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_login.*
 
-class LoginActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity(), TextWatcher, View.OnClickListener {
+
+    private lateinit var mAuth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+        Toast.makeText(applicationContext, "Login Activity", Toast.LENGTH_SHORT).show()
+
+        button_login.isEnabled = false
+        email_editext.addTextChangedListener(this)
+        password_editext.addTextChangedListener(this)
+
+        button_login.setOnClickListener(this)
+
+        mAuth = FirebaseAuth.getInstance()
     }
+
+    override fun afterTextChanged(p0: Editable?) {
+        button_login.isEnabled = validate(email_editext.text.toString(),  password_editext.text.toString())
+    }
+
+    override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
+
+    override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
+
+    override fun onClick(p0: View) {
+        Toast.makeText(this, "Button Enter", Toast.LENGTH_SHORT).show()
+       val email = email_editext.text.toString()
+        val password = password_editext.text.toString()
+
+        if(validate(email, password)){
+            mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(){
+                if(it.isSuccessful){
+                    startActivity(Intent(this, MainActivity::class.java))
+                    finish()
+                }
+            }
+        }
+        else{
+            Toast.makeText(this, "Error: Empty E and P", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    private fun validate(email: String, password: String) =
+        email.isNotEmpty() && password.isNotEmpty()
 }

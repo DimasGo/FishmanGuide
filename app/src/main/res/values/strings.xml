@@ -4,4 +4,5 @@
     <string name="tackle">Tackle</string>
     <string name="bait">Bait</string>
     <string name="history">History</string>
+    <string name="create_acc">Dont have an account? <b> Sign up </b> </string>
 </resources>
