@@ -2,6 +2,7 @@ package com.example.fishermanguide.activity
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import com.example.fishermanguide.base.BaseActivity
 import com.example.fishermanguide.R
@@ -30,5 +31,10 @@ class MainActivity : BaseActivity(0) {
             startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }
+    }
+
+    fun onClickImage(view: View) {
+        startActivity(Intent(this, LoginActivity::class.java))
+        finish()
     }
 }

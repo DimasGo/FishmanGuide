@@ -36,6 +36,7 @@
                 android:src="@drawable/ic_more"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                android:onClick="onClickImage"
                 app:layout_constraintHorizontal_bias="0.92"
                 app:layout_constraintLeft_toRightOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/textView"
@@ -43,6 +44,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
     </androidx.appcompat.widget.Toolbar>
     
     <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
