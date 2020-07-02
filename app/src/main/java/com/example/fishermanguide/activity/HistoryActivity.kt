@@ -3,6 +3,7 @@ package com.example.fishermanguide.activity
 import android.os.Bundle
 import com.example.fishermanguide.base.BaseActivity
 import com.example.fishermanguide.R
+import com.example.fishermanguide.utility.Test
 
 class HistoryActivity : BaseActivity(3) {
     override fun onCreate(savedInstanceState: Bundle?) {

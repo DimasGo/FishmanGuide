@@ -5,9 +5,10 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import com.example.fishermanguide.R
+import com.example.fishermanguide.utility.Test
 import kotlinx.android.synthetic.main.activity_registrationctivity.*
 
-class Registration : AppCompatActivity() {
+class Registration : Test() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registrationctivity)
@@ -19,11 +20,13 @@ class Registration : AppCompatActivity() {
 
     fun validate(){
         if (email_editext.text.toString().isNotEmpty() && password_editext.text.toString().isNotEmpty() && username_text.text.toString().isNotEmpty()){
-            Toast.makeText(this, "Expect. Data verification in progress", Toast.LENGTH_SHORT).show()
+            TestMassage("Expect. Data verification in progress")
         }
         else{
-            Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show()
-
+            TestMassage("Error")
         }
+
     }
+
+
 }

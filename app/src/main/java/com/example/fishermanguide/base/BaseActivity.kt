@@ -1,6 +1,7 @@
 package com.example.fishermanguide.base
 
 import android.content.Intent
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fishermanguide.*
 import com.example.fishermanguide.activity.BaitActivity
@@ -9,7 +10,7 @@ import com.example.fishermanguide.activity.MainActivity
 import com.example.fishermanguide.activity.TackleActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-open class BaseActivity(val nav_number: Int) : AppCompatActivity() {
+open class BaseActivity(val nav_number: Int) : AppCompatActivity()  {
 
     //Function to work with Bottom Navigation View
     fun SetupBottomNavigation(){
@@ -40,7 +41,13 @@ open class BaseActivity(val nav_number: Int) : AppCompatActivity() {
 
     }
 
+    fun TestMassage(Text: String) {
+        Toast.makeText(this, Text, Toast.LENGTH_SHORT).show()
+    }
+
     fun OpenLoginActivity(){
 
     }
+
+
 }

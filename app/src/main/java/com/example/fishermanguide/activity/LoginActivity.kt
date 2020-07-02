@@ -8,10 +8,11 @@ import android.text.TextWatcher
 import android.view.View
 import android.widget.Toast
 import com.example.fishermanguide.R
+import com.example.fishermanguide.utility.Test
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
 
-class LoginActivity : AppCompatActivity(), TextWatcher, View.OnClickListener {
+class LoginActivity : Test(), TextWatcher, View.OnClickListener {
 
     private lateinit var mAuth: FirebaseAuth
 
@@ -39,9 +40,10 @@ class LoginActivity : AppCompatActivity(), TextWatcher, View.OnClickListener {
     override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
 
     override fun onClick(p0: View) {
-        Toast.makeText(this, "Expect. Data verification in progress", Toast.LENGTH_LONG).show()
        val email = email_editext.text.toString()
         val password = password_editext.text.toString()
+
+        TestMassage("Expect. Data verification in progress")
 
         if(validate(email, password)){
             mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(){
@@ -52,7 +54,7 @@ class LoginActivity : AppCompatActivity(), TextWatcher, View.OnClickListener {
             }
         }
         else{
-            Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show()
+            TestMassage("Error")
         }
     }
 

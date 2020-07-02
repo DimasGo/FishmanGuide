@@ -7,7 +7,9 @@ import com.example.fishermanguide.R
 class TackleActivity : BaseActivity(1) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_home)
         SetupBottomNavigation()
+
+        TestMassage("Teckle Activity")
     }
 }

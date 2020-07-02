@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_gravity="center"
+    android:background="@drawable/history_card"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <Button
+        android:id="@+id/buttonChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:text="Change History"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/whitish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/buttonAdd_Network"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to global network"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/whitish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonChange" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/buttonDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/whitish"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAdd_Network" />
+
+
+</LinearLayout>

@@ -46,7 +46,8 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.appcompat.widget.Toolbar>
-    
+
+
     <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
         android:id="@+id/bottom_navigation_view"
         android:layout_width="match_parent"
