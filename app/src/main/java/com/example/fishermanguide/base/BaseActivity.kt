@@ -8,9 +8,10 @@ import com.example.fishermanguide.activity.BaitActivity
 import com.example.fishermanguide.activity.HistoryActivity
 import com.example.fishermanguide.activity.MainActivity
 import com.example.fishermanguide.activity.TackleActivity
+import com.example.fishermanguide.utility.Untility
 import kotlinx.android.synthetic.main.activity_main.*
 
-open class BaseActivity(val nav_number: Int) : AppCompatActivity()  {
+open class BaseActivity(val nav_number: Int) : Untility() {
 
     //Function to work with Bottom Navigation View
     fun SetupBottomNavigation(){
@@ -40,14 +41,5 @@ open class BaseActivity(val nav_number: Int) : AppCompatActivity()  {
         bottom_navigation_view.menu.getItem(nav_number).isChecked = true
 
     }
-
-    fun TestMassage(Text: String) {
-        Toast.makeText(this, Text, Toast.LENGTH_SHORT).show()
-    }
-
-    fun OpenLoginActivity(){
-
-    }
-
 
 }

@@ -1,18 +1,17 @@
 package com.example.fishermanguide.activity
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
 import android.widget.Toast
 import com.example.fishermanguide.R
-import com.example.fishermanguide.utility.Test
+import com.example.fishermanguide.utility.Untility
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
 
-class LoginActivity : Test(), TextWatcher, View.OnClickListener {
+class LoginActivity : Untility(), TextWatcher, View.OnClickListener {
 
     private lateinit var mAuth: FirebaseAuth
 
@@ -20,7 +19,6 @@ class LoginActivity : Test(), TextWatcher, View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        Toast.makeText(applicationContext, "Login Activity", Toast.LENGTH_SHORT).show()
 
         button_login.isEnabled = false
         email_editext.addTextChangedListener(this)
@@ -43,7 +41,7 @@ class LoginActivity : Test(), TextWatcher, View.OnClickListener {
        val email = email_editext.text.toString()
         val password = password_editext.text.toString()
 
-        TestMassage("Expect. Data verification in progress")
+        Massage("Expect. Data verification in progress")
 
         if(validate(email, password)){
             mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(){
@@ -54,7 +52,7 @@ class LoginActivity : Test(), TextWatcher, View.OnClickListener {
             }
         }
         else{
-            TestMassage("Error")
+            Massage("Error")
         }
     }
 

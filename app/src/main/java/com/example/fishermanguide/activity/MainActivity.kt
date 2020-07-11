@@ -16,20 +16,19 @@ class MainActivity : BaseActivity(0) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.activity_main)
         SetupBottomNavigation()
 
         //FireBase
-
         mAuth = FirebaseAuth.getInstance()
 
     }
 
-    override fun onStart() {
-        super.onStart()
-        if(mAuth.currentUser == null){
-            startActivity(Intent(this, LoginActivity::class.java))
-            finish()
+   override fun onStart() {
+    super.onStart()
+          if(mAuth.currentUser == null){
+           startActivity(Intent(this, LoginActivity::class.java))
+           finish()
         }
     }
 

@@ -1,14 +1,12 @@
 package com.example.fishermanguide.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import com.example.fishermanguide.R
-import com.example.fishermanguide.utility.Test
+import com.example.fishermanguide.utility.Untility
 import kotlinx.android.synthetic.main.activity_registrationctivity.*
 
-class Registration : Test() {
+class Registration : Untility() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registrationctivity)
@@ -20,11 +18,13 @@ class Registration : Test() {
 
     fun validate(){
         if (email_editext.text.toString().isNotEmpty() && password_editext.text.toString().isNotEmpty() && username_text.text.toString().isNotEmpty()){
-            TestMassage("Expect. Data verification in progress")
+            Massage("Expect. Data verification in progress")
         }
         else{
-            TestMassage("Error")
+            Massage("Error")
         }
+
+
 
     }
 

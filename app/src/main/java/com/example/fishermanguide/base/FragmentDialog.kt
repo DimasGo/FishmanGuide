@@ -18,7 +18,7 @@ class FragmentDialog:  DialogFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        var rootView: View = inflater.inflate(R.layout.dialog_fragment, container, false)
+        val rootView: View = inflater.inflate(R.layout.dialog_fragment, container, false)
         var ChangHistory = rootView.findViewById<Button>(R.id.buttonChange)
         var AddNetwork = rootView.findViewById<Button>(R.id.buttonAdd_Network)
         var DeleteButton = rootView.findViewById<Button>(R.id.buttonDelete)
