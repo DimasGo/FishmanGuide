@@ -13,8 +13,13 @@ import org.junit.Assert.*
  *
  * See [testing documentation](http://d.android.com/tools/testing).
  */
-@RunWith(AndroidJUnit4::class)
+/*
+@RunWith(ExampleInstrumentedUntility.AndroidJUnit::class)
 class ExampleInstrumentedUntility {
+    class AndroidJUnit {
+
+    }
+
     @Test
     fun useAppContext() {
         // Context of the app under test.
@@ -22,3 +27,5 @@ class ExampleInstrumentedUntility {
         assertEquals("com.example.fishermanguide", appContext.packageName)
     }
 }
+
+ */

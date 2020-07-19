@@ -24,9 +24,5 @@ class Registration : Untility() {
             Massage("Error")
         }
 
-
-
     }
-
-
 }

@@ -11,4 +11,7 @@ open class Untility : AppCompatActivity(){
         Toast.makeText(this, Text, Toast.LENGTH_SHORT).show()
     }
 
+    fun TestFun(number: Int){
+
+    }
 }

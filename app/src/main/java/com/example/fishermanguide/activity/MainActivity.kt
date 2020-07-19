@@ -6,8 +6,10 @@ import android.view.View
 import android.widget.Toast
 import com.example.fishermanguide.base.BaseActivity
 import com.example.fishermanguide.R
+import com.example.fishermanguide.base.FragmentDialog
 import com.google.android.material.tabs.TabLayout
 import com.google.firebase.auth.FirebaseAuth
+import kotlin.concurrent.fixedRateTimer
 import kotlin.math.log
 
 class MainActivity : BaseActivity(0) {
@@ -22,6 +24,10 @@ class MainActivity : BaseActivity(0) {
         //FireBase
         mAuth = FirebaseAuth.getInstance()
 
+
+
+
+        // FragmentDialog()
     }
 
    override fun onStart() {
